@@ -1,0 +1,21 @@
+{% block content %}
+<h2> Add Task </h2>
+<form action="" method="post">
+    <p>
+        {{form.subject.label}} <br>
+        {{form.subject(size=30)}}
+    </p>
+    <p>
+        {{form.description.label}} <br>
+        {{form.description(size=1000)}}
+    </p>
+    <p>
+        {{form.date.label}} <br>
+        {{form.date(size=20)}}
+    <p>{{form.submit()}}</p>
+    {{ form.csrf_token }}
+</form>
+<li><a href="/">Zurück</a></li>
+
+{% endblock %}
+

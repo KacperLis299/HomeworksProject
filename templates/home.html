@@ -10,17 +10,19 @@
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">Hausaufgaben</h1>
+        <hr style="height: 10px; background: orange; border: 0px;">
+        <h1 class="logo">Homework</h1>
+        <hr style="height: 7px; background: orange; border: 0px;">
         <strong><nav>
           <ul class="menu">
-            <li><a href="/HA">Tasks</a></li>
-            <li><a href="/addtask">Add Task</a></li>
-            <li><a href="{{ url_for('home_blueprint.about') }}">Über</a></li>
-
+            <center><a href="/HA">Tasks</a></>
+            <left><a href="/addtask">Add Task</a></>
+            <left><a href="{{ url_for('home_blueprint.about') }}">About</a></left>
           </ul>
         </nav></strong>
       </div>
     </header>
+
 
 
 {% block content %}
